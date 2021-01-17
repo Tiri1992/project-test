@@ -34,3 +34,7 @@ jobs:
     - name: Test with unittest
       run: |
         python -m unittest -v
+    - name: Test coverage
+      run: |
+        coverage run --source=src -m unittest discover test/
+        
